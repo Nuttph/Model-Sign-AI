@@ -10,7 +10,7 @@ app = FastAPI()
 # เปิด CORS สำหรับ React (ปรับ domain ตามต้องการ)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # ปรับตาม front-end URL
+    allow_origins=["*"],  # ปรับตาม front-end URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
