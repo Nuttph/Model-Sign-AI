@@ -28,7 +28,7 @@ scaler_lstm = joblib.load("modelLSTM/scaler.pkl")
 
 @app.get('/')
 def get():
-    return {"message": "Hello World"}
+    return {"message": "Hello World V2"}
 
 @app.websocket("/ws/mlp")
 async def websocket_mlp(websocket: WebSocket):
